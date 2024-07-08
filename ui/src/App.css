@@ -1,0 +1,195 @@
+* {
+  font-family: "Poppins";
+}
+li {
+  text-decoration: none;
+}
+Link {
+  text-decoration: none;
+}
+.option-icon {
+  width: 76px;
+}
+.bg-navbar {
+  background-color: #05233a;
+}
+.product-img {
+  width: 452px;
+  height: 452px;
+}
+.product-text {
+  text-align: justify;
+}
+.product-btn {
+  background-color: #05233a;
+}
+.product-clr {
+  color: #f16244;
+}
+a {
+  color: #f16244;
+}
+.icon-product {
+  width: 52px;
+}
+.product-prp {
+  color: #8f519f;
+}
+.product-b {
+  background-color: #8f519f;
+}
+.img-60 {
+  width: 90px;
+  height: 90px;
+  object-fit: cover; /* or contain, fill, etc. depending on your needs */
+}
+.btn-review {
+  font-size: 15px;
+}
+/* Product Card */
+.card {
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Drop Zone */
+.drop-zone {
+  width: 200px;
+  height: 200px;
+  border: 2px dashed #ff5a5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Drop Zone Text */
+.drop-zone-text {
+  color: #ff5a5f;
+  font-size: 16px;
+}
+
+/* Highlighted Drop Zone */
+.drop-zone.dragged-over {
+  background-color: rgba(255, 90, 95, 0.2);
+}
+
+/* Drop Zone Icons */
+.drop-zone-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.upload-icon {
+  height: 28px; /* Increased icon size */
+  width: 28px; /* Increased icon size */
+  margin-bottom: 10px;
+}
+
+/* Drop Zone Text */
+.drop-zone-text {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px; /* Added to separate text from icons */
+}
+.border-clr {
+  background-color: #f8f8f8;
+}
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.below-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.below-scroll {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+.below-scroll {
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+/* For WebKit-based browsers (Chrome, Safari) */
+input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+
+/* For Firefox */
+input[type="file"]::file-selector-button {
+  display: none;
+}
+.cart-icon {
+  width: 28px;
+}
+.pay-icon {
+  width: 53px;
+}
+.shipping-icon {
+  width: 90px;
+}
+.razorpay-icon {
+  width: 120px;
+}
+.bg-payment {
+  background-color: #64c5bc;
+}
+.review-name {
+  font-size: 14px;
+}
+.review-day {
+  font-size: 12px;
+}
+.img-pic {
+  width: 60px;
+}
+.img-picc {
+  width: 70px;
+}
+
+/* 2nd */
+.ft-icon {
+  width: 50px;
+}
+.ft-info {
+  font-size: 14px;
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) {
+  .product-img {
+    width: 392px;
+    height: 392px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 767px) {
+  .product-img {
+    width: 292px;
+    height: 292px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Adjustments for even smaller screens, like mobile phones */
+@media (max-width: 576px) {
+  .product-img {
+    width: 292px;
+    height: 292px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
