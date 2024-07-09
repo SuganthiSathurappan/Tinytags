@@ -26,8 +26,8 @@ app.use(body_parse.urlencoded({ extended: true }));
 //port
 const PORT = process.env.PORT || 3306
 
-app.get("/api/",(req,res)=>{
-    res.json({message:"Welcome to Backend API - suganthi"})
+app.get("/",(req,res)=>{
+    res.json({message:"Welcome to Backend API"})
 })
 
 //server
@@ -41,4 +41,4 @@ db.sequelize.sync({ force: false }).then(() => {
     console.log("Synced master database and tables created"); //CHANGED BY LAKSHMI
   });
 
-app.use('/api/',appRoute);
+app.use('/',appRoute);
