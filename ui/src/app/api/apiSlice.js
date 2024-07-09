@@ -1,8 +1,8 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 
 const baseQuery = fetchBaseQuery ({
-    baseUrl : 'https://tinytags-api.onrender.com',
-    // baseUrl:'https://tinytags.in',
+    // baseUrl : 'https://tinytags-api.onrender.com',
+    baseUrl:'https://api.tinytags.in/api',
     prepareHeaders: (headers, {getState}) => {
         // headers.set('Content-Type','application/json');
         // headers.set('Content-Type', 'multipart/form-data');

@@ -21,7 +21,7 @@ function Standart() {
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyUrl = "https://tinytags-api.onrender.com/api/verify";
+          const verifyUrl = "https://api.tinytags.in/api/verify";
           const { data } = await axios.post(verifyUrl, response);
           console.log(data);
         } catch (err) {
@@ -38,7 +38,7 @@ function Standart() {
 
   const handlePayment = async () => {
     try {
-      const orderUrl = "https://tinytags-api.onrender.com/api/order";
+      const orderUrl = "https://api.tinytags.in/api/order";
       const { data } = await axios.post(orderUrl, { amount: book.price });
       console.log(data);
       initPayment(data);
